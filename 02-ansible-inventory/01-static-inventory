@@ -1,0 +1,24 @@
+setting up static inventory in ansible: 
+
+sudo vi /etc/ansible/hosts and add your hosts. 
+
+
+35.182.200.248  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+[test]
+35.182.180.192  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+35.183.4.79     ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+15.222.252.105  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+35.183.96.237   ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+3.96.185.13     ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+
+[dev]
+3.99.173.251  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+#3.96.185.13  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+99.79.127.252  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+
+[tomcat]
+3.96.185.13  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+[sonar]
+99.79.42.168  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
+[test-tomcat]
+35.183.137.95  ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/key
