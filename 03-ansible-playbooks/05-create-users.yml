@@ -1,0 +1,19 @@
+- hosts: k8s
+  become: yes
+  tasks: 
+    - name: Create System User 
+      user:
+        name: funmi
+        create_home: true
+        shell: /bin/bash
+        comment: "Funmi;s Tech Account"
+        expires: -1
+        password: "{{'Devops2022' | password_hash('sha512','A512' )}}"
+    - name: Create Another System User 
+      user:
+        name: bobga
+        create_home: true
+        shell: /bin/bash
+        comment: "Engineer Bobga Tech Account"
+        expires: -1
+        password: "{{'Devops2022' | password_hash('sha512','A512' )}}"

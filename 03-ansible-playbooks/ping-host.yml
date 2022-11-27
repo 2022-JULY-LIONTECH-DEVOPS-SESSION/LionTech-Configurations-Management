@@ -1,0 +1,9 @@
+- hosts: test
+  gather_facts: no 
+  remote_user: ubuntu 
+  tasks:
+    - name: Test connections
+      ping:
+      remote_user: ubuntu
+
+
