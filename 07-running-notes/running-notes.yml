@@ -1,4 +1,4 @@
-LandmarkTechnology 
+LION TECH ACADEMY 
 
 AWS DevOps Guru - 
 Azure DevOps - GIT/MAVEN/
@@ -524,7 +524,7 @@ Which module does gather_facts uses? setup
 We can refer variables in ansible-playbook and python using this ginger template -- {{}}  
 
 
-LandmarkTechnology
+LION TECH ACADEMY
 ANSIBLE and python Variables. {{}}
   1. runtime vars
         --> defined at run-time
@@ -769,7 +769,7 @@ With tags in ansible-playbooks we can skip tasks
 
     - name: debug
       debug:
-        msg: "from LandmarkTechnology"
+        msg: "from LION TECH ACADEMY"
       tags:
       - echo
     - name: restarted
@@ -888,7 +888,7 @@ If we defined in both vars/main.yml will be used
 
 Metadata: These are comments. Information about the role.
    what it does and on which  OS it will works.
-   Author LandmarkTechnology
+   Author LION TECH ACADEMY
    OS RedHat
 
 If I'm trying to copy some files/scripts(shell, xml, html into the hosts
@@ -906,7 +906,7 @@ Which file will I modify if I want to change or add a tasks?
 
 - hosts: webservers
   var:
-    name: LandmarkTechnology
+    name: LION TECH ACADEMY
   become: true
   tasks:
     - name: Install apache webserver
@@ -930,7 +930,7 @@ Which file will I modify if I want to change or add a tasks?
 	  - restart apache
     - name: display content
       degub:
-        msg: from LandmarkTechnology
+        msg: from LION TECH ACADEMY
 
   handlers:
     - name: restart apache
@@ -939,7 +939,7 @@ Which file will I modify if I want to change or add a tasks?
 docker:
   sudo apt install docker.io
 
- https://github.com/LandmakTechnology/AnsibleRoles
+ https://github.com/LIONTECH-DEVOP-V2/LionTech-Configurations-Management.git
 
 site.yml 
 - hosts: appservers
@@ -962,7 +962,7 @@ ansible_user=ec2-user ansible_ssh_private_key_file=/tmp/key
 
 ansible-playbook.yml -i hosts deploy
 
- git clone https://github.com/LandmakTechnology/AnsibleRoles
+ git clone https://github.com/LIONTECH-DEVOP-V2/LionTech-Configurations-Management.git
 
 
 ansible-galaxy <RoleName>
