@@ -1,7 +1,7 @@
 ---
 # This playbook deploys a simple standalone Tomcat 7 server.
 
-- hosts: tag_Name_ansible_hosts
+- hosts: tag_team_devops
   become: yes
   roles:
    - common

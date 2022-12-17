@@ -1,4 +1,4 @@
-- hosts: tag_Name_prod_environment
+- hosts: all
   become: true
   gather_facts: true 
   ignore_errors: true

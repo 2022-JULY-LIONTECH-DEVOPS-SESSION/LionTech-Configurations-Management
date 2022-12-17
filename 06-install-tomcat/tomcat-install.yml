@@ -1,4 +1,4 @@
-- hosts: tag_Name_ansible_hosts 
+- hosts: tag_Name_ansible_hosts
   become: true
   tasks:
     - name: Install Java
