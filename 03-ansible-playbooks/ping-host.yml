@@ -1,4 +1,4 @@
-- hosts: test
+- hosts: tag_Name_ansible_hosts
   gather_facts: no 
   remote_user: ubuntu 
   tasks:
